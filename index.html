@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Moore - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        rutgers: '#cc0033',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="font-bold text-xl tracking-tight text-slate-900 dark:text-white hover:text-rutgers dark:hover:text-rutgers transition">
+                Patrick Moore<span class="text-rutgers">.</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-rutgers transition">About</a>
+                <a href="#education" class="hover:text-rutgers transition">Education</a>
+                <a href="#experience" class="hover:text-rutgers transition">Experience</a>
+                <a href="#skills" class="hover:text-rutgers transition">Skills</a>
+                <a href="#projects" class="hover:text-rutgers transition">Projects</a>
+                <a href="#contact" class="hover:text-rutgers transition">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-rutgers dark:hover:text-rutgers transition">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto w-full">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="space-y-6 max-w-2xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-red-100 text-rutgers dark:bg-red-950/60 dark:text-red-300 border border-red-200 dark:border-red-900">
+                    <span class="w-2 h-2 rounded-full bg-rutgers animate-pulse"></span>
+                    Accounting Major @ Rutgers Business School
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    Hi, I'm <span class="text-rutgers">Patrick Moore</span>
+                </h1>
+
+                <!-- ELEVATOR PITCH PLACEHOLDER -->
+                <div class="p-4 rounded-xl border border-dashed border-slate-300 dark:border-slate-700 bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-300">
+                    <p class="italic text-sm text-slate-500 dark:text-slate-400 mb-1">
+                        <i class="fas fa-edit mr-1"></i> I am a junior studying accounting at Rutgers Business School. I am aspiring to become an auditor and looking for an internship this winter or summer.
+                    </p>
+                    <p class="text-slate-700 dark:text-slate-200 leading-relaxed">
+                        <!-- REPLACE THIS TEXT WITH YOUR ELEVATOR PITCH -->
+                        [Insert your personal elevator pitch here. For example: "Detail-oriented Accounting student at Rutgers Business School with experience in cash management, research analysis, and team leadership. Passionate about financial operations, data accuracy, and leveraging technology to streamline business processes."]
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#projects" class="px-6 py-3 rounded-lg bg-rutgers hover:bg-red-700 text-white font-medium shadow-md transition">
+                        View Projects
+                    </a>
+                    <a href="mailto:Patrickm4506@gmail.com" class="px-6 py-3 rounded-lg border border-slate-300 dark:border-slate-700 hover:border-rutgers text-slate-700 dark:text-slate-200 font-medium transition">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <div class="flex items-center gap-5 pt-4 text-slate-500 dark:text-slate-400">
+                    <a href="https://www.linkedin.com/in/patrick-moore-61a76a23b/" target="_blank" rel="noopener noreferrer" class="hover:text-rutgers text-xl transition" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:Patrickm4506@gmail.com" class="hover:text-rutgers text-xl transition" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <span class="text-sm flex items-center gap-1">
+                        <i class="fas fa-map-marker-alt text-rutgers"></i> Metuchen, NJ
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="py-16 bg-slate-100/60 dark:bg-slate-800/40 border-y border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-8 flex items-center gap-3">
+                <i class="fas fa-graduation-cap text-rutgers"></i> Education
+            </h2>
+
+            <div class="bg-white dark:bg-slate-800 p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700">
+                <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 mb-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Rutgers Business School</h3>
+                        <p class="text-rutgers font-medium">Rutgers, The State University of New Jersey</p>
+                    </div>
+                    <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-semibold rounded-full">
+                        Expected May 2028
+                    </span>
+                </div>
+                <ul class="space-y-2 text-slate-600 dark:text-slate-300 text-sm">
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-angle-right text-rutgers"></i>
+                        <span><strong>Major:</strong> Accounting</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-angle-right text-rutgers"></i>
+                        <span><strong>Academic Honor:</strong> Dean's List (Fall 2025)</span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fas fa-angle-right text-rutgers"></i>
+                        <span><strong>GPA:</strong> 3.676</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-10 flex items-center gap-3">
+            <i class="fas fa-briefcase text-rutgers"></i> Experience
+        </h2>
+
+        <div class="relative border-l-2 border-slate-200 dark:border-slate-700 ml-3 sm:ml-6 space-y-10">
+            
+            <!-- Item 1 -->
+            <div class="relative pl-6 sm:pl-8">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-rutgers ring-4 ring-white dark:ring-slate-900"></div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Cashier, Waiter, Delivery Driver</h3>
+                        <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">April 2023 - Present</span>
+                    </div>
+                    <p class="text-sm font-medium text-rutgers mb-3">La Rosa Pizzeria • Metuchen, NJ</p>
+                    <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+                        <li>Accurately balanced a register carrying over $1,000, cultivating payment processing, cash handling, and money management skills.</li>
+                        <li>Developed leadership by training and onboarding new employees.</li>
+                        <li>Served over 100 customers daily in a fast-paced setting, demonstrating high adaptability and customer service excellence.</li>
+                        <li>Collaborated with team members to resolve operational challenges efficiently.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="relative pl-6 sm:pl-8">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-white dark:ring-slate-900"></div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Intern</h3>
+                        <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">September 2025 - December 2025</span>
+                    </div>
+                    <p class="text-sm font-medium text-rutgers mb-3">Brandworkers</p>
+                    <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+                        <li>Assisted the non-profit organization mission by analyzing and recording research data.</li>
+                        <li>Applied research analysis skills to support Brandworkers in mapping local manufacturers.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="relative pl-6 sm:pl-8">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 dark:bg-slate-600 ring-4 ring-white dark:ring-slate-900"></div>
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">Assistant Manager of Maintenance</h3>
+                        <span class="text-xs font-semibold text-slate-500 dark:text-slate-400">May 2021 - May 2023</span>
+                    </div>
+                    <p class="text-sm font-medium text-rutgers mb-3">Metuchen Municipal Pool • Metuchen, NJ</p>
+                    <ul class="list-disc list-inside text-sm text-slate-600 dark:text-slate-300 space-y-1.5">
+                        <li>Acquired maintenance and facility management skills to maintain a clean and safe environment for patrons.</li>
+                        <li>Provided customer service, conflict resolution, and active communication to ensure positive client experiences.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-16 bg-slate-100/60 dark:bg-slate-800/40 border-y border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-8 flex items-center gap-3">
+                <i class="fas fa-tools text-rutgers"></i> Skills & Capabilities
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Technical & Software -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700">
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-code text-rutgers"></i> Technical & Software
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Microsoft Excel</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">HTML</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">JavaScript</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Research Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Financial & Operational -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700">
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-calculator text-rutgers"></i> Financial & Operations
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Cash Handling</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Money Management</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Payment Processing</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Attention to Detail</span>
+                    </div>
+                </div>
+
+                <!-- Professional & Soft Skills -->
+                <div class="bg-white dark:bg-slate-800 p-6 rounded-xl border border-slate-200 dark:border-slate-700">
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+                        <i class="fas fa-users text-rutgers"></i> Professional Strengths
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Leadership</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Teamwork</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Customer Service</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Problem Solving</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Time Management</span>
+                        <span class="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs font-semibold rounded-md">Conflict Resolution</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION (PLACEHOLDERS READY TO FILL) -->
+    <section id="projects" class="py-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex-grow">
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+            <div>
+                <h2 class="text-2xl sm:text-3xl font-bold flex items-center gap-3">
+                    <i class="fas fa-folder-open text-rutgers"></i> Featured Projects
+                </h2>
+                <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Academic, technical, and personal projects</p>
+            </div>
+        </div>
+
+        <!-- PROJECT CARDS CONTAINER -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- PROJECT PLACEHOLDER 1 -->
+            <!-- Instructions: Duplicate or edit this card to showcase your projects -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-6 flex flex-col justify-between hover:border-rutgers transition">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-full">
+                            [Project Category / Tag]
+                        </span>
+                        <span class="text-xs text-amber-600 dark:text-amber-400 font-semibold">Ready to Edit</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
+KPMG Career Simulation                    </h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
+Worked with Microsoft Excel to complete a Forage career simulation of auditing for KPMG.                  </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">Excel</span>
+                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">JavaScript</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                    <a href="#" class="text-xs font-semibold text-rutgers hover:underline flex items-center gap-1">
+                        View Demo <i class="fas fa-external-link-alt text-[10px]"></i>
+                    </a>
+                    <a href="file:///Users/patrickmoore/Downloads/CertificateForage.pdf" class="text-xs font-semibold text-slate-500 hover:text-slate-900 dark:hover:text-white flex items-center gap-1">
+                        GitHub Repo <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- PROJECT PLACEHOLDER 2 -->
+            <div class="bg-white dark:bg-slate-800 rounded-2xl border border-dashed border-slate-300 dark:border-slate-700 p-6 flex flex-col justify-between hover:border-rutgers transition">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="px-2.5 py-1 bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300 text-xs font-medium rounded-full">
+                            [Project Category / Tag]
+                        </span>
+                        <span class="text-xs text-amber-600 dark:text-amber-400 font-semibold">Ready to Edit</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">
+Management Analysis                     </h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 mb-4">
+Worked with a team to analyze the management practices of a local business, which furthered my skills in critical thinking and teamwork                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">HTML</span>
+                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-700 text-slate-600 dark:text-slate-300">Financial Analysis</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-slate-100 dark:border-slate-700/50">
+                    <a href="#" class="text-xs font-semibold text-rutgers hover:underline flex items-center gap-1">
+                        View Demo <i class="fas fa-external-link-alt text-[10px]"></i>
+                    </a>
+                    <a href="#" class="text-xs font-semibold text-slate-500 hover:text-slate-900 dark:hover:text-white flex items-center gap-1">
+                        GitHub Repo <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT / FOOTER SECTION -->
+    <footer id="contact" class="bg-slate-900 text-white py-12 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-2xl font-bold">Let's Connect</h2>
+            <p class="text-slate-400 text-sm max-w-md mx-auto">
+                Feel free to reach out for internship opportunities, networking, or general inquiries.
+            </p>
+            <div class="flex justify-center gap-6 text-xl">
+                <a href="mailto:Patrickm4506@gmail.com" class="hover:text-rutgers transition" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/patrick-moore-61a76a23b/" target="_blank" rel="noopener noreferrer" class="hover:text-rutgers transition" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="pt-6 border-t border-slate-800 text-xs text-slate-500">
+                © 2026 Patrick Moore. Built for GitHub Pages.
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHT / DARK MODE SCRIPT -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.theme = 'light';
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.theme = 'dark';
+                themeIcon.classList.replace('fa-dark', 'fa-sun');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+        });
+    </script>
+</body>
+</html>
